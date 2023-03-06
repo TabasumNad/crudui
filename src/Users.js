@@ -24,7 +24,7 @@ const Users=()=>{
       return (
         <div className="container">
           <div className="py-4">
-            <h1>Home Page</h1>
+            <h2>User's List</h2>
             <table class="table border shadow">
               <thead class="thead-dark">
                 <tr>
@@ -43,11 +43,11 @@ const Users=()=>{
                     <td>{user.username}</td>
                     <td>{user.email}</td>
                     <td>
-                      <Link class="btn btn-primary mr-2" to={`/users/profile/${user.id}`}>
+                      <Link class="btn btn-primary mr-2 me-2" to={`/users/profile/${user.id}`}>
                         Profile
                       </Link>
                       <Link
-                        class="btn btn-outline-primary mr-2"
+                        class="btn btn-outline-primary mr-2 me-2"
                         to={`/users/edit_user/${user.id}`}
                       >
                         Edit

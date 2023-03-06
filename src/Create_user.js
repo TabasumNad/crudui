@@ -27,13 +27,13 @@ const Create_user=()=>{
     
     return (
         <div className="container">
-          <div className="w-75 mx-auto shadow p-5">
+          <div className="w-75 mx-auto shadow p-5 mt-5">
             <h2 className="text-center mb-4">Add A User</h2>
             <form onSubmit={e => onSubmit(e)}>
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control form-control-lg"
+                  className="form-control form-control-lg mb-3"
                   placeholder="Enter Your Name"
                   name="name"
                   value={name}
@@ -43,7 +43,7 @@ const Create_user=()=>{
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control form-control-lg"
+                  className="form-control form-control-lg mb-3"
                   placeholder="Enter Your Username"
                   name="username"
                   value={username}
@@ -53,7 +53,7 @@ const Create_user=()=>{
               <div className="form-group">
                 <input
                   type="email"
-                  className="form-control form-control-lg"
+                  className="form-control form-control-lg mb-3"
                   placeholder="Enter Your E-mail Address"
                   name="email"
                   value={email}
@@ -63,7 +63,7 @@ const Create_user=()=>{
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control form-control-lg"
+                  className="form-control form-control-lg mb-3"
                   placeholder="Enter Your Phone Number"
                   name="phone"
                   value={phone}
@@ -73,7 +73,7 @@ const Create_user=()=>{
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control form-control-lg"
+                  className="form-control form-control-lg mb-3"
                   placeholder="Enter Your Website Name"
                   name="website"
                   value={website}
