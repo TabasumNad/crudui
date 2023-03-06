@@ -24,7 +24,7 @@ const Users=()=>{
       return (
         <div className="container">
           <div className="py-4">
-            <h2>User's List</h2>
+            <h2 className="para">User's List</h2>
             <table class="table border shadow">
               <thead class="thead-dark">
                 <tr>

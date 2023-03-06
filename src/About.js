@@ -5,8 +5,8 @@ const About=()=>{
     return(
         <div className="container">
             <div className=" py-4">
-                <h2>About User's List using CRUD operations </h2>
-                <p><b>This UI is about how to successsfully build a User's List using all the CRUD(Create, Read, Update, Delete) operations</b></p>
+                <h2 className="para">About User's List using CRUD operations </h2>
+                <p className="para"><b>This UI is about how to successsfully build a User's List using all the CRUD(Create, Read, Update, Delete) operations</b></p>
                 <p className="paragraph">CRUD operations are used in persistent storage applications, meaning these applications will keep their data even after the system powers down. These are different from operations on data stored in volatile storage, like Random Access Memory or cache files.
                 <br>
             </br>
