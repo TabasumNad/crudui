@@ -15,7 +15,7 @@ const Profile = () => {
     loadUser();
   }, []);
   const loadUser = async () => {
-    const res = await axios.get(`http://localhost:3003/users/${id}`);
+    const res = await axios.get(`https://645b413ca8f9e4d6e7637b71.mockapi.io/crudapi/users/${id}`);
     setUser(res.data);
   };
   return (

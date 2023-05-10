@@ -12,12 +12,12 @@ const Users=()=>{
 
 
      const loadUsers = async () => {
-        const result = await axios.get("http://localhost:3003/users");
+        const result = await axios.get("https://645b413ca8f9e4d6e7637b71.mockapi.io/crudapi");
         setUser(result.data.reverse());
       };
     
       const deleteUser = async id => {
-        await axios.delete(`http://localhost:3003/users/${id}`);
+        await axios.delete(`https://645b413ca8f9e4d6e7637b71.mockapi.io/crudapi/${id}`);
         loadUsers();
       };
     

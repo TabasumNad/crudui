@@ -24,12 +24,12 @@ const EditUser = () => {
   
     const onSubmit = async e => {
       e.preventDefault();
-      await axios.put(`http://localhost:3003/users/${id}`, user);
+      await axios.put(`https://645b413ca8f9e4d6e7637b71.mockapi.io/crudapi/${id}`, user);
       navigate("/");
     };
   
     const loadUser = async () => {
-      const result = await axios.get(`http://localhost:3003/users/${id}`);
+      const result = await axios.get(`https://645b413ca8f9e4d6e7637b71.mockapi.io/crudapi/${id}`);
       setUser(result.data);
     };
     return (
