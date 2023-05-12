@@ -36,25 +36,25 @@ const Users=()=>{
                 </tr>
               </thead>
               <tbody>
-                {users.map((user, index) => (
+                {users.map((users, index) => (
                   <tr>
                     <th scope="row">{index + 1}</th>
-                    <td>{user.name}</td>
-                    <td>{user.username}</td>
-                    <td>{user.email}</td>
+                    <td>{users.name}</td>
+                    <td>{users.username}</td>
+                    <td>{users.email}</td>
                     <td>
-                      <Link class="btn btn-primary mr-2 me-2" to={`/users/profile/${user.id}`}>
+                      <Link class="btn btn-primary mr-2 me-2" to={`/users/profile/${users.id}`}>
                         Profile
                       </Link>
                       <Link
                         class="btn btn-outline-primary mr-2 me-2"
-                        to={`/users/edit_user/${user.id}`}
+                        to={`/users/edit_user/${users.id}`}
                       >
                         Edit
                       </Link>
                       <Link
                         class="btn btn-danger"
-                        onClick={() => deleteUser(user.id)}
+                        onClick={() => deleteUser(users.id)}
                       >
                         Delete
                       </Link>
